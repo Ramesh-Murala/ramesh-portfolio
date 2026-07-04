@@ -576,7 +576,7 @@ const SkillBadge = ({ name, level, imgUrl, abbr, svgIcon }) => {
             className="flex flex-col items-center justify-center gap-1.5"
           >
             {imgUrl ? (
-              <img src={imgUrl} alt={name} className="w-10 h-10 object-contain grayscale-img" loading="lazy" />
+              <img src={imgUrl} alt={name} className="w-10 h-10 object-contain" loading="lazy" />
             ) : svgIcon ? (
               <SvgSkillIcon type={svgIcon} />
             ) : (
