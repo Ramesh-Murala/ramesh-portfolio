@@ -252,7 +252,7 @@ const Hero = () => {
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          <p className="text-[13px] font-semibold uppercase tracking-[0.5em] font-mono" style={{ color: ACCENT }}>
+          <p className="text-[11px] md:text-[13px] font-semibold uppercase tracking-[0.3em] md:tracking-[0.5em] font-mono" style={{ color: ACCENT }}>
             Machine Learning Engineer
           </p>
         </motion.div>
@@ -416,7 +416,7 @@ const EXP_CARDS = [
 
 const ExperienceCard = ({ card }) => (
   <motion.div variants={cardVariant}
-    className="flex-shrink-0 w-[340px] md:w-[400px] rounded-2xl overflow-hidden snap-start scan-line relative transition-all duration-300"
+    className="flex-shrink-0 w-[calc(100vw-3rem)] md:w-[400px] rounded-2xl overflow-hidden snap-start scan-line relative transition-all duration-300"
     style={{ background: CARD, border: `1px solid ${BORDER}` }}
     onMouseEnter={e => { e.currentTarget.style.borderColor = `${ACCENT}44`; e.currentTarget.style.boxShadow = `0 0 32px rgba(0,212,255,0.08)`; }}
     onMouseLeave={e => { e.currentTarget.style.borderColor = BORDER; e.currentTarget.style.boxShadow = "none"; }}
@@ -624,7 +624,7 @@ const PROJECT_CARDS = [
   { id: "01", title: "Enterprise RAG Knowledge Platform", tag: "Production AI / RAG",
     desc: "Production-grade RAG pipeline serving 10K+ daily queries — vector search over enterprise docs using FAISS, semantic chunking, and LLM response generation on AWS SageMaker with p95 latency under 800ms.",
     stack: ["LangChain", "FAISS", "AWS", "Python", "SageMaker"],
-    bgImg: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1920&h=1080&fit=crop&q=80" },
+    bgImg: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1920&h=1080&fit=crop&q=80" },
   { id: "02", title: "Real-Time ML Inference Service", tag: "ML Infrastructure",
     desc: "Containerized inference API on AWS ECS and Lambda — serving real-time ML predictions at 1.2K req/s with CloudWatch observability, p50 latency of 124ms, and automated scaling across availability zones.",
     stack: ["Python", "Lambda", "Docker", "FastAPI", "ECS"],
