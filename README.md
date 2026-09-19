@@ -1,5 +1,9 @@
 # Ramesh Murala — Portfolio
 
+This repository contains the portfolio website source. The public portfolio is linked from my [GitHub profile](https://github.com/Ramesh-Murala).
+
+For evaluated AI projects, start with [Structured Output Agent](https://github.com/Ramesh-Murala/Structured-Output-Agent) and [RAG Agent with Citation Validation](https://github.com/Ramesh-Murala/RAG-Agent-with-Citation).
+
 A single-page React portfolio (Tailwind + Framer Motion) built on top of Create React App / CRACO.
 
 ## Setup
